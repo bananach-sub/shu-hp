@@ -44,7 +44,7 @@ async function loadPosts() {
 document.getElementById("postForm").addEventListener("submit", async e => {
   e.preventDefault();
 
-  await supabase.from("posts").insert({
+  await db.from("posts").insert({
     name: document.getElementById("name").value,
     message: document.getElementById("message").value
   });
