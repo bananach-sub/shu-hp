@@ -19,7 +19,8 @@
 <script>
 const supabaseUrl = "https://hzbxrludkptmhfxekiaw.supabase.co";
 const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imh6YnhybHVka3B0bWhmeGVraWF3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjczOTMxODYsImV4cCI6MjA4Mjk2OTE4Nn0.aJV2wb8a2ITMBL4hNjJ425ekwi6ZBfSZQmWMYLlWQU8";
-const supabase = supabase.createClient(supabaseUrl, supabaseKey);
+const db = supabase.createClient(supabaseUrl, supabaseKey);
+
 
 const postsDiv = document.getElementById("posts");
 
