@@ -25,7 +25,7 @@ const db = supabase.createClient(supabaseUrl, supabaseKey);
 const postsDiv = document.getElementById("posts");
 
 async function loadPosts() {
-  const { data } = await supabase
+  const { data } = await db
     .from("posts")
     .select("*")
     .order("created_at", { ascending: false });
