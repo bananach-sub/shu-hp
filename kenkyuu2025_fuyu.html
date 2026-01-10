@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>中の人がいないボーカロイド｜開発進捗</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      background: #0f0f0f;
+      color: #eaeaea;
+      padding: 20px;
+    }
+    h1, h2 {
+      color: #6cf;
+    }
+    .log {
+      background: #1a1a1a;
+      padding: 12px;
+      margin: 10px 0;
+      border-left: 4px solid #6cf;
+    }
+    .date {
+      font-size: 0.9em;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+<h1>中の人がいないボーカロイド</h1>
+<p>数式だけで音声（母音「あ」）を生成する試み。</p>
+
+<h2>目的</h2>
+<p>
+人間の声を一切使わず、  
+数式のみで「声らしさ」を再現できるかを検証する。
+</p>
+
+<h2>開発進捗</h2>
+
+<div class="log">
+  <div class="date">Day 1</div>
+  正弦波のみで音を生成。ピー音の確認。
+</div>
+
+<div class="log">
+  <div class="date">Day 2</div>
+  倍音とフォルマントを追加。「あ」っぽく聞こえ始める。
+</div>
+
+<div class="log">
+  <div class="date">Day 3</div>
+  強化しすぎて重機を鉄壁にぶつけたような音が発生。
+</div>
+
+<div class="log">
+  <div class="date">現在</div>
+  音量・時間変化を調整し、最新版「あ.py」が完成。
+</div>
+
+<h2>今後の予定</h2>
+<ul>
+  <li>母音の遷移（あ→い）</li>
+  <li>子音の実装</li>
+  <li>歌声化（音程制御）</li>
+</ul>
+
+</body>
+</html>
